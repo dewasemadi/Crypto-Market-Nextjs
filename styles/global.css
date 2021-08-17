@@ -1,0 +1,29 @@
+.pageButtonContainer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 30px;
+}
+
+.titleContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 576px) {
+  .titleContainer {
+    flex-direction: column;
+    justify-content: start;
+  }
+  .spaceTop {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 986px) {
+  .tableContainer {
+    overflow: scroll;
+  }
+  .pageButtonContainer {
+    justify-content: center;
+  }
+}
