@@ -1,4 +1,4 @@
-![localhost_3000_ (4)](https://user-images.githubusercontent.com/66185022/129655403-1361e9f0-147c-42e7-80c3-abb8bb9bf624.png)
+![kripto-market netlify app_](https://user-images.githubusercontent.com/66185022/129656152-2f6f99a5-d794-4bdb-962f-89f6fb8687e1.png)
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
