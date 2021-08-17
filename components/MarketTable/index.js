@@ -34,7 +34,7 @@ export default function index() {
             <Thead>
               <Tr>
                 <Th>
-                  <Text align="center">NUMBER</Text>
+                  <Text align="center">#</Text>
                 </Th>
                 <Th>Coin</Th>
                 <Th isNumeric>LAST PRICE (IDR)</Th>
