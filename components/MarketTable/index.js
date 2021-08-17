@@ -8,16 +8,19 @@ import { getMarket } from '../../data/data';
 
 export default function index() {
   const [page, setPage] = useState(1);
+  const [countPage, setCountPage] = useState(0);
   const { data, isError, isLoading, isFetching, isSuccess } = useQuery(`crypto-market-${page}`, () => getMarket(page), {
     refetchInterval: 5000,
   });
 
   const previousPageHandler = () => {
     setPage((prev) => prev - 1);
+    setCountPage((prev) => prev - 10);
   };
 
   const nextPageHandler = () => {
     setPage((prev) => prev + 1);
+    setCountPage((prev) => prev + 10);
   };
 
   return (
@@ -40,7 +43,7 @@ export default function index() {
                 <Th isNumeric>MARKET CAP</Th>
               </Tr>
             </Thead>
-            {isLoading ? <SkeletonUI /> : <TableData data={data} isSuccess={isSuccess} />}
+            {isLoading ? <SkeletonUI /> : <TableData data={data} isSuccess={isSuccess} countPage={countPage} />}
           </Table>
         </Box>
       )}

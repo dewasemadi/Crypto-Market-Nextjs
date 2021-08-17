@@ -12,7 +12,12 @@ export default function index() {
 
       <Text align="center" mt={2}>
         Visit the{' '}
-        <a href="instagram.com/dewasemadi" target="_blank" rel="noopener" style={{ textDecoration: 'none', fontWeight: 'bold' }}>
+        <a
+          href="https://github.com/dewasemadi/Crypto-Market-Nextjs"
+          target="_blank"
+          rel="noopener"
+          style={{ textDecoration: 'none', fontWeight: 'bold' }}
+        >
           repository
         </a>
       </Text>

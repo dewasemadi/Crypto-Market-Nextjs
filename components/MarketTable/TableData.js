@@ -4,14 +4,14 @@ import { Image } from '@chakra-ui/react';
 import Percentage from './Percentage';
 import { formatNumber } from '../../utils/formatting';
 
-export default function TableData({ data, isSuccess }) {
+export default function TableData({ data, isSuccess, countPage }) {
   return (
     <Tbody>
       {isSuccess &&
         data?.map((item, idx) => (
           <Tr key={idx}>
             <Td>
-              <Text align="center">{idx + 1}</Text>
+              <Text align="center">{idx + 1 + countPage}</Text>
             </Td>
             <Td>
               <Flex>
