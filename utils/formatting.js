@@ -3,8 +3,8 @@ export const formatNumber = (num) => Intl.NumberFormat('id-Id').format(num);
 export const formatPercent = (percent) =>
   Intl.NumberFormat('en-US', {
     style: 'percent',
-    minimumFractionDigits: 1,
-    maximumFractionDigits: 1,
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2,
   }).format(percent / 100);
 
 export const formatColor = (percent) => {

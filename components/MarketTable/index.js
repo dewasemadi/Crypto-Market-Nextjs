@@ -10,7 +10,7 @@ export default function index() {
   const [page, setPage] = useState(1);
   const [countPage, setCountPage] = useState(0);
   const { data, isError, isLoading, isFetching, isSuccess } = useQuery(`crypto-market-${page}`, () => getMarket(page), {
-    refetchInterval: 5000,
+    refetchInterval: 2000,
   });
 
   const previousPageHandler = () => {
@@ -29,7 +29,7 @@ export default function index() {
         <Error />
       ) : (
         <Box className="tableContainer">
-          {isFetching && <Spinner color="blue.500" position="fixed" top={10} right={10} />}
+          {/* {isFetching && <Spinner color="blue.500" position="fixed" top={10} right={10} />} */}
           <Table variant="simple">
             <Thead>
               <Tr>
@@ -37,10 +37,10 @@ export default function index() {
                   <Text align="center">NUMBER</Text>
                 </Th>
                 <Th>Coin</Th>
-                <Th isNumeric>LAST PRICE</Th>
+                <Th isNumeric>LAST PRICE (IDR)</Th>
                 <Th>24% CHANGE</Th>
                 <Th isNumeric>TOTAL VOLUME</Th>
-                <Th isNumeric>MARKET CAP</Th>
+                <Th isNumeric>MARKET CAP(IDR)</Th>
               </Tr>
             </Thead>
             {isLoading ? <SkeletonUI /> : <TableData data={data} isSuccess={isSuccess} countPage={countPage} />}

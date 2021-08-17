@@ -8,9 +8,9 @@ export default function Percentage({ percent }) {
 
   const icon = (percent) => {
     if (percent > 0) {
-      return <TriangleUpIcon w={5} h={5} color="green.500" my="auto" mr={1} />;
+      return <TriangleUpIcon w={3} h={3} color="green.500" my="auto" mr={1} />;
     } else {
-      return <TriangleDownIcon w={5} h={5} color="red.500" my="auto" mr={1} />;
+      return <TriangleDownIcon w={3} h={3} color="red.500" my="auto" mr={1} />;
     }
   };
 
